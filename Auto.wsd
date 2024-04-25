@@ -1,0 +1,20 @@
+@startuml Autos 
+
+class categoriaCarros{
+    +int: id 
+    +String: categoria
+    +String: modelo
+    +String: marca 
+    +int: añoFabricacion
+    +String: color
+}
+
+class autos{
+    +int: id
+    +String: modelo
+    +String: marca 
+    +int: añoFabricacion
+    +String: color
+}
+
+categoriaCarros <--- autos
